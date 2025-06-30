@@ -36,22 +36,54 @@ The directory structure is recursive, and each folder can contain both files and
 ## 📂 Folder Structure
 
 directory-size-calculator/
+
+
 ├── include/ # Header files
+
+
 │ ├── File.h
+
+
 │ ├── Directory.h
+
+
 │ └── FileSystem.h
+
+
 ├── src/ # Source files
+
+
 │ ├── File.cpp
+
+
 │ ├── Directory.cpp
+
+
 │ ├── FileSystem.cpp
+
+
 │ └── main.cpp
+
+
 ├── test/ # Unit tests
+
+
 │ └── test_filesystem.cpp
+
+
 └── README.md # Project documentation
+
+
 └── CMakeLists.txt # CMake build config
-└── /assets/
-  └── cli-demo.png
-  └── test-demo.png
+
+
+├── /assets/
+
+
+│ ├─── cli-demo.png
+
+  
+│ └── test-demo.png
 
 ---
 
@@ -76,21 +108,44 @@ g++ src/File.cpp src/Directory.cpp src/FileSystem.cpp test/test_filesystem.cpp -
 ## Sample Commands
 
 root > ls
+
+
 FILE: file1.txt (100 bytes)
+
+
 FILE: file2.log (200 bytes)
+
+
 DIR: docs
+
+
 DIR: images
 
+
 root > cd docs
+
+
 docs > size
+
+
 Total size: 800 bytes
 
+
 docs > cd ..
+
+
 root > cd images
+
+
 images > size
+
+
 Total size: 4000 bytes
 
+
 images > exit
+
+
 Exiting. Goodbye!
 
 ---
